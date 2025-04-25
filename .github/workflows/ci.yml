@@ -29,7 +29,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: SSH to Server 
-      uses: applyboy/ssh-action@v1.0.3
+      uses: appleboy/ssh-action@v1.0.3
       with:
         host: 44.215.71.187
         username: ec2-user 
