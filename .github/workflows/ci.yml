@@ -26,8 +26,7 @@ jobs:
       run: docker push ${{ secrets.REGISTRY_USERNAME }}/my-image-name:${{ github.run_number }}
   deploy:
    needs: build 
-
-   run-on: ubuntu-latest
+   runs-on: ubuntu-latest
    steps:
     - name: SSH to Server 
       uses: applyboy/ssh-action@v1.0.3
